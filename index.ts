@@ -1,5 +1,4 @@
-import fs, { writeFile, writeFileSync } from "fs";
-import { get } from "http";
+import { writeFile } from "fs";
 const file = Bun.file(process.env.URLS_FILE || "urls.json");
 
 const urls = await file.json();
